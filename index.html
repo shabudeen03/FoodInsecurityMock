@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--Ensure all characters/symbols encoded properly to prevent data loss-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for flexibility on different screens and sizes-->
+    <title>Food Insecurity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/pages/welcome.css">
+    <link rel="stylesheet" href="stylesheets/pages/register.css">
+    <link rel="stylesheet" href="stylesheets/pages/dashboard.css">
+    <script>0</script> <!--A nice workaround to prevent "forced layout" error on console-->
+</head>
+
+<body style="visibility: hidden;">
+    <header class="header">
+        <div class="site-header_wrapper">
+            <span class="logo"><img id="logo" src="logo.png"></span>
+
+            <div class="inline_element nav_btns">
+                <div class="inline_element top_nav">
+                    <div class="inline_element nav_link" id="tab_home">Dashboard</div>
+                    <div class="inline_element nav_link" id="tab_heatmap">Heatmap</div>
+                    <div class="inline_element nav_link" id="tab_recipes">Recipes</div>
+                    <div class="inline_element nav_link" id="tab_resources">Resources</div>
+                    <div class="inline_element nav_link" id="tab_contact">Contact</div>
+                </div>
+
+                <div class="inline_element">
+                    <button class="auth_btns" id="register_btn">Register</button>
+                    <button class="auth_btns" id="login_btn">Login</button>
+                    <button class="auth_btns" style="display:none;" id="logout_btn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <hr> -->
+    <main>
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="footer">
+            <div class="footer_titles">Benefits</div>
+            <div class="footer_sub">
+                <div class="sub_list">Find a Local Organization</div>
+                <div class="sub_list">Analyze Relevant Statistics</div>
+                <div class="sub_list">Use Heatmap</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_titles">Explore</div>
+            <div class="footer_sub">
+                <div class="sub_list">Local Pantries & Distribution Centers</div>
+                <div class="sub_list">AI Powered Recipes</div>
+                <div class="sub_list">Search Inventories</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_titles">Resources</div>
+            <div class="footer_sub">
+                <div class="sub_list">List of Organizations & Centers</div>
+                <div class="sub_list">Support</div>
+                <div class="sub_list">Contact us</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts added last-->
+    <script type="module" src="./modules/dashboard.js"></script>
+    <script type="module" src="./modules/items.js"></script>
+    <script type="module" src="./modules/content.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
